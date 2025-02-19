@@ -1,0 +1,118 @@
+body {
+    background-color: #b0b1d4;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "header navIcons modeToggle"
+        "intro profPic techStack";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1vh;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+    padding: 0%;
+    justify-content: space-between;
+}
+
+.navList>li {
+    /* Check how to bautify these buttons */
+    border: 2px solid black;
+    border-radius: 2vh;
+    padding: 0.5em 1em;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.navList>li:hover {
+    background-color: beige;
+}
+
+.intro>h1 {
+    font-size: 6em;
+    padding-left: 1em;
+}
+
+.intro>p {
+    font-size: 2em;
+}
+
+.profPic {
+    border: 3px solid #b0b1d4;
+    margin: auto;
+}
+
+#pPic {
+    width: 60%;
+    margin: 0% 20%;
+}
+
+.stacks>div {
+    display: none;
+    font-size: 1.5em;
+}
+
+.certif {
+    display: grid;
+    grid-template-areas:
+        "cert1 cert2"
+        "cert3 cert4";
+    grid-template-columns: 1fr 1fr;
+    gap: 1vh;
+    margin-bottom: 5vh;
+}
+
+.cert1 {
+    background-color: #d3b1f4;
+    width: 32vw;
+    margin: auto;
+    margin-top: 1em;
+    text-align: center;
+    padding: 0% 0% 4% 0%;
+}
+
+.cert1>p {
+    margin: 0em 1.5em;
+}
+
+.edu {
+    text-align: center;
+}
+
+.eduList {
+    list-style-type: none;
+    font-size: xx-large;
+}
+
+.eduItems {
+    padding: 0.5em;
+}
+
+.projArea {
+    display: grid;
+    grid-template-areas:
+        "proj proj"
+        "proj proj";
+    grid-template-columns: 1fr 1fr;
+    gap: 2vh;
+}
+.proj{
+    border:2px solid black;
+    border-radius: 8px;
+    padding: 1em;
+}
+.projHead{
+    display: flex;
+    justify-content: space-between;
+}
+.ghLink{
+    text-align: center;
+}
+.techImg>img{
+    height:2.5em;
+}
