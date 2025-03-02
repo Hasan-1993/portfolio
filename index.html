@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <script src="index.js"></script>
+    <title>Hasan's Portfolio</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="heroImg">
+                <nav>
+                    <div class="navbar" id="navbar">
+                        <a href='#' class="nameHeading">
+                            <h1>Hasan Iftikhar</h1>
+                        </a>
+                        <ul class="navList">
+                            <li><a href='#'>Intro</a></li>
+                            <li><a href='#'>Tech Stack</a></li>
+                            <li><a href='#'>Projects</a></li>
+                            <li><a href='#'>Certifications</a></li>
+                            <li><a href='#'>Education</a></li>
+                            <li><a href='#'>Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="introDiv">
+                    <div>
+                        <h1>HI ALL, I'M HASAN</h1>
+                        <p>Full Stack Web Developer</p>
+                        <p>Experienced in MERN Stack</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="section">
+                <h1>My Tech Stack</h1>
+                <div class="techImg">
+                    <img src="/images/html.png" alt="html-logo">
+                    <img src="/images/css.svg" alt="css-logo">
+                    <img src="/images/JS.svg" alt="javascript-logo">
+                    <img src="/images/Bootstrap_logo.png" alt="bootstrap-logo">
+                    <img src="/images/tailwindCSS.png" alt="tailwindCSS-logo">
+                    <img src="/images/React.webp" alt="react-logo">
+                    <img src="/images/vitejs.svg" alt="vite-logo">
+                    <img src="/images/npm.png" alt="npm-logo">
+                    <img src="/images/axios.png" alt="axios-logo">
+                    <img src="/images/node2.png" alt="node-logo">
+                    <img src="/images/sql.png" alt="sql-logo">
+                    <img src="/images/MongoDB.webp" alt="mongo-logo">
+                    <img src="/images/postgresql.webp" alt="postgresql-logo">
+                    <img src="/images/api.svg" alt="api-logo">
+                    <img src="/images/responsive.svg" alt="responsive-design-logo">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bgImg2">
+
+            </div>
+            <div class="section">
+                <h1>My Projects</h1>
+                <p>(more coming soon...)</p>
+                <div class="projectsArea">
+                    <div class="project" onclick="document.getElementById('modal1').style.display = 'block'"><img
+                            src="/images/Proj1.PNG" alt='website-view' style="height:100%; width:100%;"></div>
+                    <div class="project" onclick="document.getElementById('modal2').style.display = 'block'"><img
+                            src='/images/proj2.PNG' alt='CuddleClonesProject' style='height:100%; width:100%'></div>
+                    <div class="project" onclick="document.getElementById('modal3').style.display = 'block'"><img
+                            src="/images/Proj1.PNG" alt='website-view' style="height:100%; width:100%;"></div>
+                    <div class="project" onclick="document.getElementById('modal4').style.display = 'block'"><img
+                            src='/images/proj2.PNG' alt='CuddleClonesProject' style='height:100%; width:100%'></div>
+                </div>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modalContent">
+                    <span class="close"
+                        onclick="document.getElementById('modal1').style.display = 'none'">&times;</span>
+                    <h3>Bookstore Project</h3>
+                    <img src="/images/Proj1.PNG" alt='website-view' style="width:60%; margin:auto;">
+                    <p>This is a Full Stack project of a bookstore management app. The frontend, made using Vite, React
+                        and TailwindCSS, shows the book
+                        inventory, and options to perform CRUD. While the Backend, created using Node, Express and
+                        MongoDB interacts with the Database to make
+                        changes in the inventory.
+                    </p>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modalContent">
+                    <span class="close"
+                        onclick="document.getElementById('modal2').style.display = 'none'">&times;</span>
+                    <h3>Cuddle Clones Website</h3>
+                    <img src="/images/proj2.PNG" alt='website-view' style="width:60%">
+                    <p>It is a Frontend-only project of a business that manufactures stuffed animal replicas oif real
+                        life pet's through their images. The project uses vanilla stack of HTML, CSS and JavaScript.
+                        However, the detail given to each component is extensive, and the website is fully-responsive
+                        for any screen size.
+                    </p>
+                </div>
+            </div>
+            <div id="modal3" class="modal">
+                <div class="modalContent">
+                    <span class="close"
+                        onclick="document.getElementById('modal3').style.display = 'none'">&times;</span>
+                    <h3>News App Website</h3>
+                    <img src="/images/Proj1.PNG" alt='website-view' style="width:60%">
+                    <p>This web app shows the latest news fetched form a third-party API. It maps all the news
+                        components dynamically using Bootstrap features, creating more as you go along. It has several
+                        React & Bootstrap features like infintie scroll, top loading bar, state management and hooks.
+                    </p>
+                </div>
+            </div>
+            <div id="modal4" class="modal">
+                <div class="modalContent">
+                    <span class="close"
+                        onclick="document.getElementById('modal4').style.display = 'none'">&times;</span>
+                    <h3>Facebook Landing Page</h3>
+                    <img src="/images/Proj1.PNG" alt='website-view' style="width:60%">
+                    <p>Please check out my clone of Facebook landing page, as of 2022. This project is a detail oriented
+                        frontend replica of Facebook, created in TailwindCSS.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section">
+                <h1>Certifications</h1>
+                <div class="certifications">
+                    <div class="card">
+                        <h3>The Complete 2024 Web Development Bootcamp</h3>
+                        <h6>By Dr Angela Yu</h6>
+                        <img src="/images/Udemy_logo.png" alt="" class="certImg">
+                        <button type="button" class="certBtn"><a href="/images/DrYu.jpg" target="_blank">View Certificate</a></button>
+                    </div>
+                    <div class="card">
+                        <h3>Full Stack Web Development MASTERY Course</h3>
+                        <h6>By Prerak Mehta</h6>
+                        <img src="/images/Udemy_logo.png" alt="" class="certImg">
+                        <button type="button" class="certBtn"><a href="/images/PMehta.jpg" target="_blank">View Certificate</a></button>
+                    </div>
+                    <div class="card">
+                        <h3>MERN Stack Development</h3>
+                        <h6>ICT Training Institute, Johar Town, Lahore</h6>
+                        <img src="/images/ICTTI-logo.svg" alt="" class="certImg">
+                        <button type="button" class="certBtn"><a href="/images/ICTInstitute.jpg" target="_blank">View Certificate</a></button>
+                    </div>
+                    <div class="card">
+                        <h3>CS50x: Introduction to Computer Science</h3>
+                        <h6>By Dr Angela Yu</h6>
+                        <img src="/images/edxlogo.png" alt="" class="certImg">
+                        <button type="button" class="certBtn"><a href="/images/edx.png" target="_blank">View Certificate</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section">
+                <div class="edu">
+                    <h1>Education</h1>
+                    <div>
+                        <ul class="eduList">
+                            <li class="eduItems">MS Engineering: NUST, H-12, Islamabad</li>
+                            <li class="eduItems">BS Engineering: NUST, H-12, Islamabad</li>
+                            <li class="eduItems">Matric & Intermediate: P.A.F. College Sargodha</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        var modal1 = document.getElementById('modal1');
+        var modal2 = document.getElementById('modal2');
+        var modal3 = document.getElementById('modal3');
+        var modal4 = document.getElementById('modal4');
+        window.onclick = function (e) {
+            if (e.target == modal1) {
+                modal1.style.display = 'none';
+            } else if (e.target == modal2) {
+                modal2.style.display = 'none';
+            } else if (e.target == modal3) {
+                modal3.style.display = 'none';
+            } else if (e.target == modal4) {
+                modal4.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
