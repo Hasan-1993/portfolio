@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/cca9bc1248.js" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <script src="index.js"></script>
+    <title>Hasan's Portfolio</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="heroImg">
+                <nav>
+                    <div class="navbar" id="navbar">
+                        <a href='#' class="nameHeading">
+                            <h1 id="titleName"><img src="/images/coding.svg" alt="" id="spinner"> Hasan Iftikhar
+                            </h1>
+                        </a>
+                        <ul class="navList">
+                            <li><a class="navLinks" href='#intro' aria-label="Go To Introduction Section">Intro</a></li>
+                            <li><a class="navLinks" href='#techStack' aria-label="Go To My Tech Stack">Tech Stack</a>
+                            </li>
+                            <li><a class="navLinks" href='#projects' aria-label="Go To List of Projects">Projects</a>
+                            </li>
+                            <li><a class="navLinks" href='#certifications'
+                                    aria-label="Go To My Certifications">Certifications</a></li>
+                            <li><a class="navLinks" href='#education' aria-label="Go To My Education">Education</a></li>
+                            <li><a class="navLinks" href='#contact' aria-label="Go To How to contact me">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="mobileMenuIcon" id='menuIcon' onclick="menuFunction()">
+                            <i class="fa-solid fa-bars" aria-label="Menu Icon for Mobiles"></i>
+                        </div>
+                    </div>
+                </nav>
+                <div class="mobileMenu" id="mobileMenu">
+                    <a href="#intro" class="mobileMenuList navLinks" aria-label="Go To Introduction Section">Intro <i
+                            class='fas fa-caret-right' aria-label="forward pointer"></i></a>
+                    <a href="#techStack" class="mobileMenuList navLinks" aria-label="Go To My Tech Stack">Tech Stack <i
+                            class='fas fa-caret-right' aria-label="forward pointer"></i></a>
+                    <a href="#projects" class="mobileMenuList navLinks" aria-label="Go To List of Projects">Projects <i
+                            class='fas fa-caret-right' aria-label="forward pointer"></i></a>
+                    <a href="#certifications" class="mobileMenuList navLinks"
+                        aria-label="Go To My Certifications">Certifications
+                        <i class='fas fa-caret-right' aria-label="forward pointer"></i></a>
+                    <a href="#education" class="mobileMenuList navLinks" aria-label="Go To My Education">Education <i
+                            class='fas fa-caret-right' aria-label="forward pointer"></i></a>
+                    <a href="#contact" class="mobileMenuList navLinks" aria-label="Go To How to contact me">Contact <i
+                            class='fas fa-caret-right' aria-label="forward pointer"></i></a>
+                </div>
+                <div class="introDiv">
+                    <div>
+                        <h1 id="wave2"><i id="wave" class='far fa-hand-paper' aria-label="Waving Hello"></i></h1>
+                        <h1 class="cursor typewriter-animation" style="margin-top:0;">HI ALL, I'M HASAN.</h1>
+                        <p>Full Stack Web Developer</p>
+                        <p>Experienced in
+                        <div id="alternatingText">
+                            <div>ReactJS</div>
+                            <div>TypeScript</div>
+                            <div>NodeJS</div>
+                            <div>Databases</div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <hr>
+        <section id="intro">
+            <div class="section">
+                <h1>A Summary of Me</h1>
+                <img src="/images/profPic.webp" alt="Hasan Profile Picture" class="pp" loading="lazy">
+                <div class='summaryEnvelope'>
+                    <p class="summary">Hello! I am Hasan. I am a passionate Web Developer, working in Frontend as
+                        well
+                        as Backend. I love creating responsive designs and creating amazing things from mere ideas.
+                        I love working in a relaxed and supportive environment where its just you and your work. You
+                        will find my projects to be written in clean, efficient and maintainable code. It is my
+                        passion to dedicate my time to learning or building anyhting that is remotely linked to
+                        computers.
+                        <br><br>When I am not working, you will still find me on my computer.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="techStack">
+            <div class="section">
+                <h1>My Tech Stack</h1>
+                <div class="techImg">
+                    <img src="/images/html.png" alt="html logo">
+                    <img src="/images/css.svg" alt="css logo">
+                    <img src="/images/JS.svg" alt="javascript logo">
+                    <img src="/images/Bootstrap_logo.png" alt="bootstrap logo">
+                    <img src="/images/tailwindCSS.png" alt="tailwindCSS logo">
+                    <img src="/images/React.webp" alt="react logo">
+                    <img src="/images/typescript.svg" alt="typescript logo">
+                    <img src="/images/vitejs.svg" alt="vite logo">
+                    <img src="/images/nodejs.png" alt="node logo">
+                    <img src="/images/npm.png" alt="npm logo">
+                    <img src="/images/axios.png" alt="axios logo">
+                    <img src="/images/sql.png" alt="sql logo">
+                    <img src="/images/MongoDB.webp" alt="mongo logo">
+                    <img src="/images/postgresql.webp" alt="postgresqllogo">
+                    <img src="/images/api.svg" alt="api logo">
+                    <img src="/images/responsive.svg" alt="responsive-design logo">
+                </div>
+            </div>
+        </section>
+        <section id="techStack">
+            <div class="section">
+                <h1 id="services"><u><b>What I can do for you!</b></u></h1>
+                <ul class="workList">
+                    <li style="animation-delay: 0s;"><i class="fas fa-users" aria-label="design of your webpage"></i>
+                        UI/UX design</li>
+                    <li style="animation-delay: 0.5s;"><i class='fas fa-swatchbook'
+                            aria-label="frontend development"></i> Frontend Development</li>
+                    <li style="animation-delay: 0.1s;"><i class='fas fa-server' aria-label="backend Development"></i>
+                        Backend Development</li>
+                    <li style="animation-delay: 0.8s;"><i class='far fa-object-group'
+                            aria-label="Make a website responsive"></i> Responsive designs</li>
+                    <li style="animation-delay: 0.2s;"><i class='fas fa-microchip' aria-label="Removing bugs"></i>
+                        Optimized Performance</li>
+                    <li style="animation-delay: 1.1s;"><i class='fas fa-chart-line'
+                            aria-label="Generating new solutions"></i> Custom Solutions</li>
+                    <li style="animation-delay: 0.4s;"><i class='fas fa-code-branch'
+                            aria-label="Integrating and making APIs"></i> RESTFull APIs</li>
+                    <li style="animation-delay: 0.9s;"><i class='fas fa-people-carry'
+                            aria-label="Work collaboratively"></i> Collaborative Development
+                    </li>
+                    <li style="animation-delay: 0.3s;"><i class='fas fa-database'
+                            aria-label="work with existing database"></i> Database Management</li>
+                    <li style="animation-delay: 0.7s;"><i class='fas fa-charging-station'
+                            aria-label="deployment and maintenance of website"></i> Deploy & Maintain</li>
+                </ul>
+            </div>
+            <div class="bgImg2"></div>
+        </section>
+        <hr>
+        <section id="projects">
+            <div class="section" id="projects">
+                <h1 class="titleAnimation">QUALIFICATIONS</h1>
+                <br>
+                <h1><i class='fas fa-code' style="color:white" aria-label="projects list"></i> Details of Projects</h1>
+                <p class='animate__animated animate__tada animate__infinite animate__slow'
+                    style="padding:0; margin:0; font-size: large">(more coming soon...)</p>
+                <div class="projectsArea">
+                    <div class="project" onclick="document.getElementById('modal1').style.display = 'block'">
+                        <img src="/images/Proj1.PNG" alt='website-view'>
+                        <h3>Bookstore Management App</h3>
+                    </div>
+                    <div class="project" onclick="document.getElementById('modal2').style.display = 'block'">
+                        <img src='/images/proj2.PNG' alt='CuddleClonesProject'>
+                        <h3>Cuddle Clones Website Clone</h3>
+                    </div>
+                    <div class="project" onclick="document.getElementById('modal3').style.display = 'block'">
+                        <img src="/images/Proj1.PNG" alt='website-view'>
+                        <h3>News App Using React and API</h3>
+                    </div>
+                    <div class="project" onclick="document.getElementById('modal4').style.display = 'block'">
+                        <img src='/images/proj2.PNG' alt='CuddleClonesProject'>
+                        <h3>FB Landing Page in TailwindCSS</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modalContent">
+                    <span class="close" onclick="document.getElementById('modal1').style.display = 'none'"
+                        aria-label="close this modal">&times;</span>
+                    <h3>Bookstore Project</h3>
+                    <img src="/images/Proj1.PNG" alt='website-view' style="width:60%; margin:auto;">
+                    <p>This is a Full Stack project of a bookstore management app. The frontend, made using Vite, React
+                        and TailwindCSS, shows the book
+                        inventory, and options to perform CRUD. While the Backend, created using Node, Express and
+                        MongoDB interacts with the Database to make
+                        changes in the inventory.
+                    </p>
+                    <button type="button" class="projectBtn" aria-label="jump to the live website"><a href='#'
+                            aria-label="go to this website">View Website <i class='fas fa-desktop'
+                                aria-label="go to this website"></i> <i class="fas fa-atom"></i></a></button>
+                    <button type="button" class="projectBtn" aria-label="view code on Github"><a href='#'
+                            aria-label="view code for it">View Code <i class="fas fa-laptop-code"
+                                aria-label="view code for it"></i> <i class="fab fa-git"></i></a></button>
+                </div>
+            </div>
+            <div id="modal2" class="modal">
+                <div class="modalContent">
+                    <span class="close" onclick="document.getElementById('modal2').style.display = 'none'"
+                        aria-label="close this modal">&times;</span>
+                    <h3>Cuddle Clones Website</h3>
+                    <img src="/images/proj2.PNG" alt='website-view' style="width:60%">
+                    <p>It is a Frontend-only project of a business that manufactures stuffed animal replicas oif real
+                        life pet's through their images. The project uses vanilla stack of HTML, CSS and JavaScript.
+                        However, the detail given to each component is extensive, and the website is fully-responsive
+                        for any screen size.
+                    </p>
+                    <button type="button" class="projectBtn" aria-label="jump to the live website"><a href='#'
+                            aria-label="go to this website">View Website <i class='fas fa-desktop'
+                                aria-label="go to this website"></i> <i class="fas fa-atom"></i></a></button>
+                    <button type="button" class="projectBtn" aria-label="view code on Github"><a href='#'
+                            aria-label="view code for it">View Code <i class="fas fa-laptop-code"
+                                aria-label="view code for it"></i> <i class="fab fa-git"></i></a></button>
+                </div>
+            </div>
+            <div id="modal3" class="modal">
+                <div class="modalContent">
+                    <span class="close" onclick="document.getElementById('modal3').style.display = 'none'"
+                        aria-label="close this modal">&times;</span>
+                    <h3>News App Website</h3>
+                    <img src="/images/Proj1.PNG" alt='website-view' style="width:60%">
+                    <p>This web app shows the latest news fetched form a third-party API. It maps all the news
+                        components dynamically using Bootstrap features, creating more as you go along. It has several
+                        React & Bootstrap features like infintie scroll, top loading bar, state management and hooks.
+                    </p>
+                    <button type="button" class="projectBtn" aria-label="jump to the live website"><a href='#'
+                            aria-label="go to this website">View Website <i class='fas fa-desktop'
+                                aria-label="go to this website"></i> <i class="fas fa-atom"></i></a></button>
+                    <button type="button" class="projectBtn" aria-label="view code on Github"><a href='#'
+                            aria-label="view code for it">View Code <i class="fas fa-laptop-code"
+                                aria-label="view code for it"></i> <i class="fab fa-git"></i></a></button>
+                </div>
+            </div>
+            <div id="modal4" class="modal">
+                <div class="modalContent">
+                    <span class="close" onclick="document.getElementById('modal4').style.display = 'none'"
+                        aria-label="close this modal">&times;</span>
+                    <h3>Facebook Landing Page</h3>
+                    <img src="/images/Proj1.PNG" alt='website-view' style="width:60%">
+                    <p>Please check out my clone of Facebook landing page, as of 2022. This project is a detail oriented
+                        frontend replica of Facebook, created in TailwindCSS.</p>
+                    <button type="button" class="projectBtn" aria-label="jump to the live website"><a href='#'
+                            aria-label="go to this website">View Website <i class='fas fa-desktop'
+                                aria-label="go to this website"></i> <i class="fas fa-atom"></i></a></button>
+                    <button type="button" class="projectBtn" aria-label="view code on Github"><a href='#'
+                            aria-label="view code for it">View Code <i class="fas fa-laptop-code"
+                                aria-label="view code for it"></i> <i class="fab fa-git"></i></a></button>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="certifications">
+            <div class="section">
+                <h1><i class="fas fa-user-graduate" aria-label="my certificates"></i> Certifications <i
+                        class="fas fa-award" aria-label="my certificates"></i></h1>
+                <div class="certifications">
+                    <div class="card">
+                        <h3>The Complete 2024 Web Development Bootcamp</h3>
+                        <h6>By Dr Angela Yu</h6>
+                        <img src="/images/Udemy_logo.png" alt="certificate 1 from udemy" class="certImg">
+                        <button type="button" class="certBtn"><a
+                                class=" animate__animated animate__flash animate__infinite animate__slower"
+                                href="https://ude.my/UC-c4250454-72bf-431e-84ed-3243cd32cb87" target="_blank"
+                                aria-label="my !st Full Stack Certificate"> <i class='	fas fa-paperclip'></i> View
+                                Certificate <i class='fas fa-glasses'></i></a></button>
+                    </div>
+                    <div class="card">
+                        <h3>Full Stack Web Development MASTERY Course</h3>
+                        <h6>By Prerak Mehta</h6>
+                        <img src="/images/Udemy_logo.png" alt="certificate 2 from udemy" class="certImg">
+                        <button type="button" class="certBtn"><a
+                                class=" animate__animated animate__flash animate__infinite animate__slower"
+                                href="https://ude.my/UC-d6d8f375-d8fd-421d-bf75-678fcf5d7cfc" target="_blank"
+                                aria-label="my 2nd Full Stack certificate"> <i class='	fas fa-paperclip'></i> View
+                                Certificate <i class='fas fa-glasses'></i></a></button>
+                    </div>
+                    <div class="card">
+                        <h3>MERN Stack Development</h3>
+                        <h6>ICT Training Institute, Johar Town, Lahore</h6>
+                        <img src="/images/ICTTI-logo.svg" alt="certificate 3 from ICTTI" class="certImg">
+                        <button type="button" class="certBtn"><a
+                                class=" animate__animated animate__flash animate__infinite animate__slower"
+                                href="/images/ICTInstitute.jpg" target="_blank"
+                                aria-label="my 3rd MERN Stack certificate"> <i class='	fas fa-paperclip'></i> View
+                                Certificate <i class='fas fa-glasses'></i></a></button>
+                    </div>
+                    <div class="card">
+                        <h3>CS50x: Introduction to Computer Science</h3>
+                        <h6>By edX CS50</h6>
+                        <img src="/images/edxlogo.png" alt="certificate 4 from Harvard edX CS50" class="certImg">
+                        <button type="button" class="certBtn"><a
+                                class=" animate__animated animate__flash animate__infinite animate__slower"
+                                href="/images/edx.png" target="_blank" aria-label="my 4th certificate"><i
+                                    class='	fas fa-paperclip'></i> View Certificate <i class='fas fa-glasses'></i></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="education">
+            <div class="section">
+                <div class="edu">
+                    <div style="width:fit-content; margin: 3vw auto; color:rgb(255, 119, 0);">
+                        <h1 style='font-size:4em'
+                            class="animate__animated animate__hinge animate__infinite animate__slower"><i
+                                class="fas fa-book-open" aria-label="my degrees"></i> Education
+                            <i class="fas fa-book-reader" aria-label="my degrees"></i>
+                        </h1>
+                    </div>
+                    <div>
+                        <ul class="eduList">
+                            <li class="eduItems">
+                                <p>MS Engineering: NUST, H-12, Islamabad</p>
+                            </li>
+                            <li class="eduItems">
+                                <p>BS Engineering: NUST, H-12, Islamabad</p>
+                            </li>
+                            <li class="eduItems">
+                                <p>Matric & Intermediate: P.A.F. College Sargodha</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <footer>
+            <div>
+                <div id="contact1">
+                    <section id="contact">
+                        <div class="section">
+                            <h1 style="margin-bottom: 12vh;">If You Have an Idea, Let's Discuss!</h1>
+                            <form action="mailto:hasaniftikhar571@gmail.com" method="post" enctype="text/plain">
+                                <div class="emailForm">
+                                    <div id="nameEmail">
+                                        <label for="name">Name</label>
+                                        <input class='inputArea' id="name" type="text" name="name"
+                                            placeholder="Your Name" required aria-labelledby="name">
+                                        <label for="email">Email</label>
+                                        <input class='inputArea' id="email" type="email" name="email"
+                                            placeholder="Your Email" required aria-labelledby="email">
+                                    </div>
+                                    <div id="textarea">
+                                        <label for="emailContent">Message</label>
+                                        <textarea class='inputArea' id="emailMessage" name="emailMessage" required
+                                            aria-labelledby="email content" placeholder="Your Message"></textarea>
+                                    </div>
+                                </div>
+                                <button id="emailSubmitBtn" type="submit" value="send">Send Email <i
+                                        class='far fa-paper-plane' alt="send me an email"></i></button>
+                            </form>
+                            <div class="gmailLink">
+                                <img id="gmailLogo" src="/images/gmail.svg" alt="gmail logo" onclick="gmailAppear()">
+                                <div id="gmail" class="animate__animated animate__fast">
+                                    <p>Email Address:</p>
+                                    <p><u>hasaniftikhar571@gmail.com</u></p>
+                                </div>
+                            </div>
+                            <h1 style="margin: 7vh; padding-top: 5vh;">Find me on the web!</h1>
+                            <div class="socialMediaLinks">
+                                <a class="socials" href="https://www.linkedin.com/in/hassan-iftikhar7/"><img src="/images/linkedIn.svg" alt="linkedin-icon"> LinkedIn</a>
+                                <a class="socials" href="https://github.com/Hasan-1993"><img src="/images/github.svg" alt="github-icon"> Github</a>
+                                <a class="socials" href="https://dribbble.com/hasan4387"><img src="/images/dribbble.svg" alt="dribbble-icon"> Dribbble</a>
+                                <a class="socials" href="https://codepen.io/Hasan-Iftikhar" alt="visit my codepen profile"><img
+                                        src="/images/codepen.svg" alt="codepen-icon"> Codepen</a>
+                                <a class="socials" href="#"><img src="/images/twitter.svg" alt="twitter-icon"> Twitter</a>
+                                <a class="socials" href="#"><img src="/images/instagram.svg" alt="instagram-icon"> Instagram</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="foot">
+                <p>Made by the Senpai Team</p>
+                <p>&copy; 2025 Hasan Iftikhar. No rights reserved.</p>
+                <p>My lovely portfolio.</p>
+            </div>
+
+        </footer>
+    </div>
+
+
+    <div class="scrollTopDiv">
+        <div class="container" onclick="document.documentElement.scrollTop = 0;">
+            <i id='topPointer' class="fas fa-space-shuttle" aria-label="jump to top of the page"></i>
+            <div class="square black">
+                <div class="square">
+                    <div class="square black">
+                        <div class="square">
+                            <div class="square black">
+                                <div class="square">
+                                    <div class="square black">
+                                        <div class="square">
+                                            <div class="square black">
+                                                <div class="square">
+                                                    <div class="square black">
+                                                        <div class="square">
+                                                            <div class="square black">
+                                                                <div class="square">
+                                                                    <div class="square black">
+                                                                        <div class="square">
+                                                                            <div class="square black">
+                                                                                <div class="square">
+                                                                                    <div class="square black">
+                                                                                        <div class="square">
+                                                                                            <div class="square black">
+                                                                                                <div class="square">
+                                                                                                    <div
+                                                                                                        class="square black">
+                                                                                                        <div
+                                                                                                            class="square">
+                                                                                                            <div
+                                                                                                                class="square black">
+                                                                                                                <div
+                                                                                                                    class="square">
+                                                                                                                    <div
+                                                                                                                        class="square black">
+                                                                                                                        <div
+                                                                                                                            class="square">
+                                                                                                                            <div
+                                                                                                                                class="square black">
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function gmailAppear() {
+            let gmail = document.getElementById('gmail');
+            if (gmail.style.opacity == 0) {
+                gmail.style.opacity = 1;
+                if (gmail.classList.contains('animate__zoomOutUp')) {
+                    gmail.classList.replace('animate__zoomOutUp', 'animate__zoomInDown');
+                } else {
+                    gmail.classList.add(`animate__zoomInDown`);
+                }
+            }
+            else {
+                gmail.classList.replace('animate__zoomInDown', 'animate__zoomOutUp');
+                setTimeout(()=>{gmail.style.opacity = 0;},200);
+            }
+        }
+
+        // THE BELOW CODE IS FOR HIGHLIGHTING THE NAV ICONS WHICH IS CURRENTLY BEING VISITED
+
+        document.addEventListener('DOMContentLoaded', () => {
+            let navLinks = document.querySelectorAll('.navLinks');
+            let sections = document.querySelectorAll('section');
+
+            window.addEventListener('scroll', () => {
+                let currentSection = '';
+                sections.forEach((section) => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= sectionTop - sectionHeight / 3) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach((link) => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').slice(1) === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+        // THE ABOVE CODE IS FOR HIGHLIGHTING THE NAV ICONS WHICH IS CURRENTLY BEING VISITED
+
+
+
+        // THE BELOW CODE IS FOR THE NAVBAR TO GET ANIMATE WHEN USER STARTS SCROLLING DOWN AFTER PAGE LOAD
+        document.addEventListener('DOMContentLoaded', () => {
+            let navbar = document.getElementById('navbar');
+            let hasScrolled = false;
+
+            window.addEventListener('scroll', () => {
+                if (!hasScrolled && window.scrollY > 0) {
+                    navbar.classList.add('navAnimation');
+                    hasScrolled = true;
+                }
+            });
+            window.addEventListener('load', () => {
+                navbar.classList.remove('navAnimation');
+                hasScrolled = false;
+            });
+            window.addEventListener('scroll', () => {
+                if (hasScrolled && window.scrollY == 0) {
+                    navbar.classList.remove('navAnimation');
+                    hasScrolled = false;
+                }
+            });
+        });
+        // THE ABOVE CODE IS FOR THE NAVBAR TO GET ANIMATE WHEN USER STARTS SCROLLING DOWN AFTER PAGE LOAD
+
+        //CODE FOR CLOSING THE MODALS ON esc KEY PRESS
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                modal1.style.display = 'none';
+                modal2.style.display = 'none';
+                modal3.style.display = 'none';
+                modal4.style.display = 'none';
+            }
+        });
+
+
+        //CODE FOR SHOWING AND CLOSING MODALS IN PROJECTS
+        let modal1 = document.getElementById('modal1');
+        let modal2 = document.getElementById('modal2');
+        let modal3 = document.getElementById('modal3');
+        let modal4 = document.getElementById('modal4');
+        window.onclick = function (e) {
+            if (e.target == modal1) {
+                modal1.style.display = 'none';
+            } else if (e.target == modal2) {
+                modal2.style.display = 'none';
+            } else if (e.target == modal3) {
+                modal3.style.display = 'none';
+            } else if (e.target == modal4) {
+                modal4.style.display = 'none';
+            }
+        }
+
+        let menuToggleNumber = 0;
+        function menuFunction() {
+            console.log('clicked');
+            let menuIcon = document.getElementById('menuIcon');
+            let menuList = document.getElementById('mobileMenu');
+            if (menuToggleNumber % 2 == 0) {
+                menuIcon.style.animation = 'menuToggle1 1s ease';
+                menuIcon.style.transform = 'rotateZ(-90deg)';
+                menuList.style.display = 'flex';
+                menuList.style.opacity = 1;
+                menuList.style.animation = 'menuListToggle1 1s ease';
+            } else {
+                menuIcon.style.animation = 'menuToggle2 1s ease';
+                menuIcon.style.transform = 'rotateZ(0deg)';
+                menuList.style.animation = 'menuListToggle2 1s ease';
+                menuList.style.opacity = 0;
+                setTimeout(() => { menuList.style.display = 'none'; }, 1000)
+
+            }
+            menuToggleNumber++;
+            console.log(menuToggleNumber);
+        }
+    </script>
+</body>
+
+</html>
