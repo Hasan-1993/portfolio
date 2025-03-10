@@ -10,7 +10,7 @@ html {
 }
 
 .heroImg {
-    background-image: url('/images/bgImg1-reduced.jpg');
+    background-image: url('images/bgImg1-reduced.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
