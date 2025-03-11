@@ -20,8 +20,11 @@
             <div class="heroImg">
                 <nav>
                     <div class="navbar" id="navbar">
-                        <a href='#' class="nameHeading">
-                            <h1 id="titleName"><img src="images/coding.svg" alt="" id="spinner"> Hasan Iftikhar
+                        <a href='/' class="nameHeading">
+                            <h1 id="titleName">
+                                <img src='/images/Profile.gif' alt='gif for portfolio title'
+                                    style="height:50px; border-radius: 50%;">
+                                Hasan Iftikhar
                             </h1>
                         </a>
                         <ul class="navList">
@@ -57,18 +60,11 @@
                             class='fas fa-caret-right' aria-label="forward pointer"></i></a>
                 </div>
                 <div class="introDiv">
-                    <div>
+                    <div class="introFlex">
                         <h1 id="wave2"><i id="wave" class='far fa-hand-paper' aria-label="Waving Hello"></i></h1>
-                        <h1 class="cursor typewriter-animation" style="margin-top:0;">HI ALL, I'M HASAN.</h1>
-                        <p>Full Stack Web Developer</p>
-                        <p>Experienced in
-                        <div id="alternatingText" class="animate__animated">
-                            <div>ReactJS</div>
-                            <div>TypeScript</div>
-                            <div>NodeJS</div>
-                            <div>Databases</div>
-                        </div>
-                        </p>
+                        <h1 class="cursor typewriter-animation" style="margin:0;">HI ALL, I'M HASAN.</h1>
+                        <p class="animate__animated animate__fadeIn animate__slower animate__delay-4s">Full Stack Web Developer</p>
+                        <div class="animate__animated animate__fadeIn animate__slower animate__delay-5s">Welcome to my Portfolio!</div>
                     </div>
                 </div>
             </div>
@@ -318,6 +314,12 @@
                             </li>
                         </ul>
                     </div>
+                    <hr>
+                    <div class="downloadCV">
+                        <h1>Download My Resum&eacute;:</h1>
+                        <button class="downloadBtn" type="button"><a href='/files/Hasan_Iftikhar-Resume.pdf' target="_blank">Download Resume (PDF)</a></button>
+                        <button class="downloadBtn" type="button"><a href='/files/Hasan_Iftikhar-Resume.docx' target="_blank">Download Resume (Word)</a></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -356,13 +358,19 @@
                             </div>
                             <h1 style="margin: 7vh; padding-top: 5vh;">Find me on the web!</h1>
                             <div class="socialMediaLinks">
-                                <a class="socials" href="https://www.linkedin.com/in/hassan-iftikhar7/"><img src="images/linkedIn.svg" alt="linkedin-icon"> LinkedIn</a>
-                                <a class="socials" href="https://github.com/Hasan-1993"><img src="images/github.svg" alt="github-icon"> Github</a>
-                                <a class="socials" href="https://dribbble.com/hasan4387"><img src="images/dribbble.svg" alt="dribbble-icon"> Dribbble</a>
-                                <a class="socials" href="https://codepen.io/Hasan-Iftikhar" alt="visit my codepen profile"><img
-                                        src="images/codepen.svg" alt="codepen-icon"> Codepen</a>
-                                <a class="socials" href="#"><img src="images/twitter.svg" alt="twitter-icon"> Twitter</a>
-                                <a class="socials" href="#"><img src="images/instagram.svg" alt="instagram-icon"> Instagram</a>
+                                <a class="socials" href="https://www.linkedin.com/in/hassan-iftikhar7/"><img
+                                        src="images/linkedIn.svg" alt="linkedin-icon"> LinkedIn</a>
+                                <a class="socials" href="https://github.com/Hasan-1993"><img src="images/github.svg"
+                                        alt="github-icon"> Github</a>
+                                <a class="socials" href="https://dribbble.com/hasan4387"><img src="images/dribbble.svg"
+                                        alt="dribbble-icon"> Dribbble</a>
+                                <a class="socials" href="https://codepen.io/Hasan-Iftikhar"
+                                    alt="visit my codepen profile"><img src="images/codepen.svg" alt="codepen-icon">
+                                    Codepen</a>
+                                <a class="socials" href="#"><img src="images/twitter.svg" alt="twitter-icon">
+                                    Twitter</a>
+                                <a class="socials" href="#"><img src="images/instagram.svg" alt="instagram-icon">
+                                    Instagram</a>
                             </div>
                         </div>
                     </section>
@@ -451,14 +459,6 @@
 
     <script>
 
-        
-
-        setTimeout(altTextDelay,4000);
-        function altTextDelay(){
-            let altText = document.getElementById('alternatingText');
-            altText.style.opacity = 1;
-        }
-
         function gmailAppear() {
             let gmail = document.getElementById('gmail');
             if (gmail.style.opacity == 0) {
@@ -471,7 +471,7 @@
             }
             else {
                 gmail.classList.replace('animate__zoomInDown', 'animate__zoomOutUp');
-                setTimeout(()=>{gmail.style.opacity = 0;},200);
+                setTimeout(() => { gmail.style.opacity = 0; }, 200);
             }
         }
 

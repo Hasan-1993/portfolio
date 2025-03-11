@@ -72,47 +72,21 @@ hr {
 }
 
 #titleName {
-    margin: 0px;
-}
-
-#spinner {
-    height: 48px;
-    animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotateX(0deg);
-    }
-
-    25% {
-        transform: rotateX(90deg);
-    }
-
-    50% {
-        transform: rotateX(0deg);
-    }
-
-    75% {
-        transform: rotateX(90deg);
-    }
-
-    100% {
-        transform: rotateX(0deg);
-    }
+    margin: auto;
 }
 
 #wave {
-    color: #7edbdc;
-    font-size: 3em;
-    padding-bottom: 2vw;
+    /* color: #7edbdc; */
+    color:rgb(202, 155, 139);
+    font-size: 2.5em;
+    padding-bottom: 4vw;
     transform: rotateZ(-15deg);
-    animation: waveAnimation 1s linear infinite;
+    animation: waveAnimation 2s linear infinite;
 }
 
 @keyframes waveAnimation {
     0% {
-        transform: rotateZ(-15deg);
+        transform: rotateZ(-20deg);
     }
 
     25% {
@@ -120,7 +94,7 @@ hr {
     }
 
     50% {
-        transform: rotateZ(15deg);
+        transform: rotateZ(20deg);
     }
 
     75% {
@@ -128,17 +102,17 @@ hr {
     }
 
     100% {
-        transform: rotateZ(-15deg);
+        transform: rotateZ(-20deg);
     }
 }
 
 #wave2 {
-    animation: waveAnimation2 linear 1s infinite;
+    animation: waveAnimation2 linear 2s infinite;
 }
 
 @keyframes waveAnimation2 {
     0% {
-        transform: translate(-20px, 0px);
+        transform: translate(-17px, 0px);
     }
 
     25% {
@@ -146,7 +120,7 @@ hr {
     }
 
     50% {
-        transform: translate(20px, 0px);
+        transform: translate(17px, 0px);
     }
 
     75% {
@@ -154,7 +128,7 @@ hr {
     }
 
     100% {
-        transform: translate(-20px, 0);
+        transform: translate(-17px, 0);
     }
 }
 
@@ -162,98 +136,6 @@ hr {
     border: 1px solid gold;
     margin: 0;
 }
-
-/* START OF Animation for Changing text on Home Page */
-#alternatingText {
-    display: inline-block;        /* commented to start it after 3s of document.load */
-    /* width: 180px; */
-    text-align: center;
-    height: 36px;
-    vertical-align: -2px;
-    opacity:0;
-    /* background-color: #7edbdc; */
-}
-
-#alternatingText>div {
-    background-color: #b8cbb8;
-    font-size: 0px;
-    opacity: 0;
-    margin-left: -30px;
-    position: absolute;
-    font-weight: 600;
-    padding:10px;
-    border-radius: 10px;
-    /* box-shadow: 0px 60px 25px -20px rgba(0, 0, 0, 0.5); */
-}
-
-#alternatingText>div:nth-child(1) {
-    animation: roll 5s linear infinite 0s;
-}
-
-#alternatingText>div:nth-child(2) {
-    animation: roll 5s linear infinite 1s;
-}
-
-#alternatingText>div:nth-child(3) {
-    animation: roll 5s linear infinite 2s;
-}
-
-#alternatingText>div:nth-child(4) {
-    animation: roll 5s linear infinite 3s;
-}
-
-@keyframes roll {
-    0% {
-        font-size: 0px;
-        opacity: 0;
-        margin-left: -30px;
-        margin-top: 0px;
-        transform: rotate(-25deg);
-        background-color: rgb(255, 0, 0);
-    }
-
-    3% {
-        opacity: 1;
-        transform: rotate(0deg);
-        background-color: rgb(255, 145, 0);
-    }
-
-    5% {
-        font-size: inherit;
-        opacity: 1;
-        margin-left: 0px;
-        margin-top: 0px;
-        background-color: rgb(128, 90, 0);
-    }
-
-    20% {
-        font-size: inherit;
-        opacity: 1;
-        margin-left: 0px;
-        margin-top: 0px;
-        transform: rotate(0deg);
-        background-color: gold;
-    }
-
-    27% {
-        font-size: 0px;
-        opacity: 0.5;
-        margin-left: 20px;
-        margin-top: 100px;
-        background-color: lime;
-    }
-
-    100% {
-        font-size: 0px;
-        opacity: 0;
-        margin-left: -30px;
-        margin-top: 0px;
-        transform: rotate(15deg);
-        background-color: greenyellow;
-    }
-}
-
-/* END OF Animation for alternating text on Home Page */
 
 .scrollTopDiv {
     position: fixed;
@@ -340,6 +222,7 @@ a {
     padding: 1vw 3vw;
 }
 
+
 .introDiv {
     height: 100vh;
     display: flex;
@@ -351,6 +234,9 @@ a {
     font-size: 1.5em;
 }
 
+.introFlex{
+    padding:0;
+}
 .section {
     font-size: 1em;
     padding: 3vw;
@@ -787,6 +673,24 @@ a {
     font-size: 1.6em;
 }
 
+.downloadBtn{
+    margin: 80px 50px;
+    padding: 15px 40px;
+    cursor:pointer;
+    background-color: #000000;
+    color:gold;
+    box-shadow: 0vw 0vw 4vh 0vh rgb(172, 146, 0);
+    border:1px solid white;
+    border-radius: 15px;
+    transition: all 0.7s ease;
+}
+.downloadBtn:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 0vw 0vw 5vh 0vh gold;
+    transition:all 0.7s ease;
+}
+
+
 .mobileMenuIcon {
     display: none;
     font-size: 2em;
@@ -1011,5 +915,13 @@ h1 {
     .project>img {
         width: 80vw;
         height: 43vw;
+    }
+    .downloadBtn{
+        margin:40px auto;
+    }
+    .foot{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        text-align:center;
     }
 }
