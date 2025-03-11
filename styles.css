@@ -165,11 +165,12 @@ hr {
 
 /* START OF Animation for Changing text on Home Page */
 #alternatingText {
-    display: inline-block;
+    display: inline-block;        /* commented to start it after 3s of document.load */
     /* width: 180px; */
     text-align: center;
     height: 36px;
     vertical-align: -2px;
+    opacity:0;
     /* background-color: #7edbdc; */
 }
 

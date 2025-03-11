@@ -62,7 +62,7 @@
                         <h1 class="cursor typewriter-animation" style="margin-top:0;">HI ALL, I'M HASAN.</h1>
                         <p>Full Stack Web Developer</p>
                         <p>Experienced in
-                        <div id="alternatingText">
+                        <div id="alternatingText" class="animate__animated">
                             <div>ReactJS</div>
                             <div>TypeScript</div>
                             <div>NodeJS</div>
@@ -450,6 +450,14 @@
     </div>
 
     <script>
+
+        
+
+        setTimeout(altTextDelay,4000);
+        function altTextDelay(){
+            let altText = document.getElementById('alternatingText');
+            altText.style.opacity = 1;
+        }
 
         function gmailAppear() {
             let gmail = document.getElementById('gmail');
